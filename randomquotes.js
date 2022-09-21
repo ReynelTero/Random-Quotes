@@ -53,7 +53,7 @@ nextButton.addEventListener('click', () => {
     if (file > data.length - 1) {
         file = 0;
     }
-    nextPrev(file);
+    nextPrev();
 });
 
 prevButton.addEventListener('click', () => {
@@ -61,7 +61,7 @@ prevButton.addEventListener('click', () => {
     if (file < 0) {
         file = data.length - 1;
     }
-    nextPrev(file);
+    nextPrev();
 });
 
 
