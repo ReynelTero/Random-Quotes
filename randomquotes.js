@@ -1,5 +1,5 @@
 
-
+/* DATA PROFILES */
 const data = [{
     image: 'baruch_spinoza.jpg',
     name: 'Baruch Spinoza',
@@ -23,7 +23,8 @@ const data = [{
     name: 'Socrates',
     year: '(c.470 BCE-399 BCE)',
     quotes: 'There is only one good, knowledge, and one evil, ignorance'
-}]
+}];
+/* DATA PROFILES */
 
 const profile = document.getElementById('profile');
 const name = document.getElementById('name');
@@ -48,6 +49,7 @@ const nextPrev = () => {
     quotes.textContent = item.quotes;
 };
 
+/* NEXT SCRIPT*/
 nextButton.addEventListener('click', () => {
     file++;
     if (file > data.length - 1) {
@@ -55,7 +57,9 @@ nextButton.addEventListener('click', () => {
     }
     nextPrev();
 });
+/* NEXT SCRIPT*/
 
+/* PREVIEW SCRIPT */
 prevButton.addEventListener('click', () => {
     file--;
     if (file < 0) {
@@ -63,6 +67,7 @@ prevButton.addEventListener('click', () => {
     }
     nextPrev();
 });
+/* PREVIEW SCRIPT */
 
 
 
